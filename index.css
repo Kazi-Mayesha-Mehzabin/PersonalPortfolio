@@ -1,5 +1,5 @@
 #div1 {
-    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #077aa4 0%, #1d2f31 100%);
     height: auto;
 }
 
@@ -20,6 +20,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
+}
+.firstDiv{
+    margin-top:-30px !important;
 }
 
 #menu {
@@ -106,7 +109,7 @@
 #footerDiv {
     height: 300px;
     width: 100%;
-    background-image: -webkit-linear-gradient(0deg, #5e5ed1 0%, #57cfda 100%);
+    background-image: -webkit-linear-gradient(0deg, #077aa4 0%, #1d2f31 100%);
     text-align: center;
   
 }
@@ -344,4 +347,82 @@
     width: 100%;
     height: 100px;
     color: #88f3ff;
+}
+
+.wrapper {
+    margin-top:50px;
+    margin-bottom: 50px;;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left:20px;
+    
+    
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin-left: 0;
+       
+    }
+}
+.box {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s;
+    height:470px;
+   
+}
+.box:hover {
+    transform: translateY(-5px);
+}
+.image-section {
+    height: 70%;
+    background: #ccc;
+}
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+}
+.paper-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.view-button {
+   background-color: orangered;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    font-size: 1rem;
+    width:30%;
+    font-weight: bold;
+    display: inline-block; /* Ensures the button is visible */
+    visibility: visible; /* Always show the button */
+    opacity: 1; /* Full visibility */
+}
+.view-button:hover {
+    color: #4ebbe2;
+    
 }

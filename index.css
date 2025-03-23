@@ -575,6 +575,23 @@ html, body {
     border-radius: 8px;
     transition: transform 0.2s;
 }
+@media (max-width: 768px) {
+
+    .blog-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+        width: 100%;
+        max-width: 1000px;
+        margin-left:0px;
+    }
+    .blog-container2 {
+        
+        margin-left:0px;
+    }
+   
+   
+}
 
 .blog-container img {
     width: 100%;

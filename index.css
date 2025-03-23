@@ -589,6 +589,21 @@ html, body {
         
         margin-left:0px;
     }
+    .large-box {
+       
+        width:100%;
+    }
+    .medium-box {
+        
+        width:100%;
+    }
+    .small-box{
+        width:100%;
+    }
+    .m-screen{
+        font-size:14px !important;
+    }
+    
    
    
 }

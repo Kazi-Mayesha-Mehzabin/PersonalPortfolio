@@ -99,6 +99,11 @@
 .dropdown2:hover .dropdown-content2 {
     display: block;
 }
+.margin-lr{
+    margin-top:50px; 
+    margin-bottom:50px;
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -107,14 +112,35 @@
         align-items: flex-start;
     }
 
+    .dropdown2 {
+        display: flex;
+        justify-content: flex-end; /* Align to the right */
+    }
+    
     .dropdown-btn2 {
-        width: 100%;
-        text-align: left;
-        margin-right: 0px;;
+        margin-right: 0; /* Remove margin-right if it's present */
+        font-size: 12px;;
+        padding: 8px 12px;
+        margin-top: 10px;
+       margin-left:75px;
+
     }
-    .m-screen{
-        font-size:14px !important;
-    }
+    .dropdown-content2 {
+        margin-top:45px;
+        padding: 8px 10px;
+   
+       }
+       .margin-lr{
+    margin-top:40px; 
+    margin-bottom:40px;
+
+}
+   
+    .blog-header .left h2 {
+   
+       font-size: 14px !important;
+        margin-left:0px;
+   }
 }
 h2 {
     font-family: 'Montserrat', sans-serif; /* Stylish font */
@@ -142,7 +168,30 @@ h2 {
 </head>
 
 <body>
-    <div style="margin-top:50px; margin-bottom:50px;" class="blog-header">
+    <div id="menu">
+        <div id="menuTitle">
+            <h3  style="color:black !important;"><b>KM Mehzabin</b></h3>
+        </div>
+
+        <a  style="color:black !important;" href="#aboutMyself">About</a>
+        <a  style="color:black !important;" href="#aboutMyself">Education</a>
+        <a  style="color:black !important;"href="#blogDiv">Publications</a>
+        <a  style="color:black !important;"href="#projectDiv">Projects</a>
+        <div class="dropdown">
+            <a  style="color:black !important;" href="#" class="dropdown-toggle">Interest</a>
+            <div class="dropdown-content">
+                <a href="blogs-kmm.html"><p>Blogs</p></a>
+                <a href="blogs-kmm.html"><p>Books</p></a>
+                <a href="blogs-kmm.html"><p>Paintings</p></a>
+            </div>
+        </div>
+
+       
+    </div>
+    <div id="hamburger" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="blog-header margin-lr">
         <div class="left">
             <h2 class="b-screen">A Journey into the Mind of Mehzabin</h2>
         </div>
@@ -197,6 +246,16 @@ h2 {
             </a>
         </div>
 
+         <!-- Small Box -->
+         <div class="small-box">
+            <a href="tech-trends.html" target="_blank">
+                <img src="img/alone.jpg" alt="Blog 3">
+                <div class="blog-content">
+                    <h5>Underappreciated as Always</h5>
+                </div>
+            </a>
+        </div>
+
         <!-- Medium Box -->
         <div class="medium-box">
             <a href="adventure-awaits.html" target="_blank">
@@ -207,15 +266,7 @@ h2 {
             </a>
         </div>
 
-        <!-- Small Box -->
-        <div class="small-box">
-            <a href="tech-trends.html" target="_blank">
-                <img src="img/alone.jpg" alt="Blog 3">
-                <div class="blog-content">
-                    <h5>Underappreciated as Always</h5>
-                </div>
-            </a>
-        </div>
+       
         <div class="small-box">
             <a href="tech-trends.html" target="_blank">
                 <img src="img/alone.jpg" alt="Blog 3">
@@ -512,6 +563,26 @@ document.addEventListener('click', function(event) {
     }
 });
     </script>
+
+<script>
+    // Get the dropdown toggle and the dropdown content
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    // Toggle the dropdown when the "Interest" link is clicked
+    dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default action of the anchor tag
+        // Toggle the "show" class on the dropdown container
+        dropdownContent.parentElement.classList.toggle('show');
+    });
+
+    // Optional: Close the dropdown if clicked outside
+    document.addEventListener('click', (e) => {
+        if (!dropdownContent.contains(e.target) && !dropdownToggle.contains(e.target)) {
+            dropdownContent.parentElement.classList.remove('show');
+        }
+    });
+</script>
    
 
 </body>

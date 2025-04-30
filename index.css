@@ -7,45 +7,8 @@ html, body {
     height: auto;
 }
 
-#menu a {
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 15px;
-    padding-left: 17px;
-    padding-right: 17px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#menu a:hover {
-    border: 2px solid white; /* 5px border on hover */
-    border-radius: 15px; /* Apply 5px border radius */
-    color: white; /* Optional: Change text color on hover */
-    display: inline-block; /* Ensure the element behaves like a block */
-    transition: all 0.1s ease;
-}
-
-.firstDiv{
-    margin-top:-30px !important;
-}
 
 
-#menu {
-    display: flex;
-    justify-content: flex-end; /* Align menu items to the right */
-    align-items: center; /* Center items vertically */
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 25px;
-    position: relative; /* Ensure relative positioning for dropdown */
-    height: auto; /* Allow the height to adjust based on content */
-
-}
 .card-box-shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: -webkit-linear-gradient(0deg, #d8d8e3 0%, #76d4dc 100%);
@@ -68,33 +31,7 @@ html, body {
     
 }
 
-#menu p:hover {
 
-    color: #363434;
-}
-
-#menuTitle {
-    width: 100%;
-
-}
-
-#menu h3 {
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-
-    padding-left: 17px;
-    padding-right: 17px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
 
 #coverPhoto {
     background-color: #ffffff;
@@ -477,7 +414,7 @@ html, body {
     min-width: 160px; /* Minimum width for dropdown */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
     border-radius: 5px; /* Rounded corners */
-    margin-top:50px;
+    margin-top:20px;
     max-height: 300px !important;
     z-index: 1000; /* Ensure it appears above other content */
 }
@@ -511,43 +448,7 @@ html, body {
 }
 
 /* Responsive for Small Screens */
-@media screen and (max-width: 768px) {
-    #hamburger {
-        display: block;
-       margin-left:50px;
-       margin-top:15px;
-         
-    }
 
-    #menu {
-        flex-direction: column;
-        align-items: flex-start;
-        position: fixed;
-        left: -100%;
-        margin:0;
-        top: 0;
-        height: 100%;
-        width: 350px;
-        background: #222;
-        padding: 50px 20px;
-        transition: left 0.4s ease;
-        z-index: 1000;
-        
-
-    }
-
-    #menu.show {
-        left: 0;
-    }
-
-    #menuTitle {
-        margin-bottom: 20px;
-    }
-
-    #menu a {
-        margin: 10px 0;
-    }
-}
 
 
 
@@ -575,7 +476,7 @@ html, body {
     border-radius: 8px;
     transition: transform 0.2s;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     .blog-container {
         display: grid;
@@ -601,9 +502,7 @@ html, body {
     .small-box{
         width:100% !important;
     }
-   
-
-   
+      
    
 }
 
@@ -882,11 +781,21 @@ html, body {
 /* Education Container */
 .education-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     gap: 10px;
 }
+@media (max-width: 768px) {
+    .education-container {    
+        flex-direction: column;
+       
+    }
+    .experience-container {
+        flex-direction: column !important;
+       
+    }
 
+}
 /* Individual Education Item */
 .education-item {
     max-width: 600px;
@@ -939,7 +848,7 @@ html, body {
 /* Experience Container */
 .experience-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     gap: 20px;
 }
@@ -951,7 +860,7 @@ html, body {
     padding: 15px;
     margin: 10px 0;
     text-align: left;
-    border-left: 3px solid #004461;
+    
    
    
     transition: transform 0.3s, box-shadow 0.3s;
@@ -974,7 +883,7 @@ html, body {
 .experience-item p {
     font-size: 1rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 /* Responsive Design */
@@ -988,6 +897,78 @@ html, body {
     }
 }
 
-/*skills*/
+/*menu*/
+
+#menu a {
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.2s;
+}
+
+#menu a:hover {
+    border: 2px solid white; /* 5px border on hover */
+    border-radius: 15px; /* Apply 5px border radius */
+    color: white; /* Optional: Change text color on hover */
+    display: inline-block; /* Ensure the element behaves like a block */
+    transition: all 0.1s ease;
+}
 
 
+#menuTitle h3 {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#menu p:hover {
+
+    color: #363434;
+}
+
+#menuTitle {
+    width: 100%;
+
+}
+
+#menu h3 {
+    float: left;
+   
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+
+   
+
+}
+#menu {
+   
+    justify-content: flex-end; /* Align menu items to the right */
+     display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 0px;
+    position: relative; /* Ensure relative positioning for dropdown */
+    height: auto; /* Allow the height to adjust based on content */
+    
+   
+    flex-wrap: wrap;
+
+}
+@media (min-width: 991px) {
+    #menu {
+        display: flex;
+   
+       
+       
+       
+    
+    }
+   
+}

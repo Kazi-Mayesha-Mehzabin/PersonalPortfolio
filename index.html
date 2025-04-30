@@ -27,23 +27,28 @@
 <body>
 
     <div>
+        
         <div id="div1">
+            
 
             <div id="menu">
                 <div id="menuTitle">
                     <h3><b>KM Mehzabin</b></h3>
                 </div>
+                
+                
         
                 <a href="#aboutMyself">Education</a>
                 <a href="#aboutMyself">Experience</a>
                 <a href="#blogDiv">Publications</a>
                 <a href="#projectDiv">Projects</a>
+                <a href="#projectDiv">Achievements</a>
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle">Interest</a>
                     <div class="dropdown-content">
                         <a href="blogs-kmm.html"><p>Blogs</p></a>
                         <a href="blogs-kmm.html"><p>Books</p></a>
-                        <a href="blogs-kmm.html"><p>TechFest</p></a>
+                        <a href="techFest.html"><p>TechFest</p></a>
                         <a href="blogs-kmm.html"><p>Paintings</p></a>
                     </div>
                 </div>
@@ -54,7 +59,7 @@
                 <i class="fa fa-bars"></i>
             </div>
         
-
+           
             <div id="coverPhoto">
 
                 <div class="container mb-3">
@@ -65,7 +70,8 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 mb-2 center">
 
 
-                            <img src="img/myimg.jpg" class="img-rounded" style="width: 70%; height: 70%; border-radius:10px;">
+                            <img src="img/myimg.jpg" class="img-rounded" style="width: 70%; height: 70%; 
+                            border-radius:15px;  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);">
                         </div>
 
                         <div class="col-lg-6 col-md-6 col-sm-12 mb-2 center">
@@ -92,8 +98,7 @@
                                         <span style="font-size: 18px; color: #0066cc; margin-right: 10px;">&#10148;</span>
                                         Researcher (Web development, Robotics, NLP)<br>
                         
-                                        <span style="font-size: 18px; color: #0066cc; margin-right: 10px;">&#10148;</span>
-                                        Blogger | Exploring ideas through writing.<br>
+                                       
                         
                                         <span style="font-size: 18px; color: #0066cc; margin-right: 10px;">&#10148;</span>
                                         Exploring New Technologies & Frameworks
@@ -232,7 +237,7 @@
                     <h3>LankaBangla Securities Ltd.</h3>
                     <p><strong>Role:</strong> Intern, IT Department (LankaBangla Information System, LBIS)</p>
                     <p><strong>Duration:</strong> May 2024 – August 2024</p>
-                    <p><strong>Description:</strong> Assisted with IT solutions, helping streamline internal processes and improve software systems, providing hands-on experience in a professional IT environment.</p>
+                    <p><strong>Description:</strong> Assisted with IT solutions. Developed a Research Website Research Network Space (Full-stack).</p>
                 </div>
                 
                 <!-- IEEE Computer Society IUB Student Branch -->
@@ -253,11 +258,17 @@
                 <!-- Laravel Developer -->
                 <div class="experience-item">
                     <h3>Laravel Developer</h3>
-                    <p><strong>Role:</strong> Laravel Developer (Freelance / Personal Projects)</p>
-                    <p><strong>Description:</strong> Developed dynamic and responsive web applications using the Laravel framework. Focused on backend development, API integration, and database management, contributing to the delivery of high-quality, scalable solutions.</p>
+                    <p><strong>Role:</strong> Laravel Developer (Professional / Personal Projects)</p>
+                    <p><strong>Years:</strong>3 Years</p>
+                    <p><strong>Description:</strong> Developed dynamic and responsive web applications using the Laravel framework. 
+                        Focused on backend development, and database management, 
+                        contributing to the delivery of high-quality, scalable solutions.</p>
+                        
                 </div>
             </div>
         </section>
+
+        
         
         
         
@@ -367,6 +378,14 @@ window.onclick = function (event) {
     if (event.target === document.getElementById('modal')) {
         closeModal();
     }
+}
+
+    </script>
+
+    <script>
+        function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
 }
 
     </script>

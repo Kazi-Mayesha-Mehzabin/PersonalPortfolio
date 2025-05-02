@@ -110,6 +110,12 @@ html, body {
     height: auto;
     width: auto;
     padding: 20px;
+   
+
+}
+.shortinfo {
+    
+    text-decoration: underline;
 
 }
 
@@ -390,6 +396,9 @@ html, body {
     display: inline-block; /* Display the dropdown inline with other elements */
     
 }
+.editdrop{
+    margin-top:7px !important;
+}
 
 /* Dropdown toggle styling (Interest text) */
 .dropdown-toggle {
@@ -398,7 +407,7 @@ html, body {
     font-size: 16px; /* Font size for the text */
    
     color: white; /* White text color */
-   
+
     text-decoration: none; /* Remove underline from anchor */
     transition: background-color 0.3s; /* Smooth transition effect */
 }
@@ -421,7 +430,7 @@ html, body {
 
 /* Styling for dropdown items */
 .dropdown-content p {
-    padding: 12px 16px; /* Padding inside the dropdown items */
+    padding: 10px 12px; /* Padding inside the dropdown items */
     margin: 0; /* Remove margin */
     cursor: pointer; /* Pointer cursor on hover */
     color:black;
@@ -438,14 +447,7 @@ html, body {
     display: block;
 }
 
-#hamburger {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-    
-    
-}
+
 
 /* Responsive for Small Screens */
 
@@ -909,7 +911,10 @@ html, body {
     padding: 5px 15px;
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: background-color 0.2s;
+  
+}
+#menu::before{
+    text-decoration: none !important;
 }
 
 #menu a:hover {
@@ -917,14 +922,10 @@ html, body {
     border-radius: 15px; /* Apply 5px border radius */
     color: white; /* Optional: Change text color on hover */
     display: inline-block; /* Ensure the element behaves like a block */
-    transition: all 0.1s ease;
+    transition: all 1s ease;
 }
 
 
-#menuTitle h3 {
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 
 #menu p:hover {
@@ -932,28 +933,24 @@ html, body {
     color: #363434;
 }
 
-#menuTitle {
-    width: 100%;
 
+.menuTitle{
+   
+    color: white;;
+    text-align: left !important;
+    margin-right:80px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#menu h3 {
-    float: left;
-   
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
 
-   
-
-}
 #menu {
    
-    justify-content: flex-end; /* Align menu items to the right */
+    justify-content: flex-start; /* Align menu items to the right */
      display: flex;
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 0px;
+    padding-top: 20px;
     position: relative; /* Ensure relative positioning for dropdown */
     height: auto; /* Allow the height to adjust based on content */
     
@@ -961,14 +958,14 @@ html, body {
     flex-wrap: wrap;
 
 }
-@media (min-width: 991px) {
-    #menu {
-        display: flex;
+@media (max-width: 767px) {
+    .menuTitle{
    
-       
-       
-       
-    
+        color: white;;
+        text-align: left !important;
+        margin-right:0px;
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
    
 }

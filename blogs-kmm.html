@@ -112,34 +112,36 @@
         align-items: flex-start;
     }
 
-    .dropdown2 {
-        display: flex;
-        justify-content: flex-end; /* Align to the right */
-    }
-    
     .dropdown-btn2 {
-        margin-right: 0; /* Remove margin-right if it's present */
-        font-size: 12px;;
-        padding: 8px 12px;
-        margin-top: 10px;
-       margin-left:75px;
-
+        font-size: 14px;
+        padding: 8px 8px;
+        max-width: 100%;
     }
-    .dropdown-content2 {
-        margin-top:45px;
-        padding: 8px 10px;
-   
-       }
+
+    .blog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .dropdown2 {
+        width: 100%;
+        
+    }
        .margin-lr{
     margin-top:40px; 
     margin-bottom:40px;
 
 }
-   
     .blog-header .left h2 {
    
        font-size: 14px !important;
         margin-left:0px;
+        text-align: left;
    }
 }
 h2 {
@@ -170,7 +172,7 @@ h2 {
 <body>
     <div id="menu">
               
-        
+        <a style="color:black;" href="#aboutMyself">Home</a>
         <a style="color:black;" href="#aboutMyself">Education</a>
         <a style="color:black;" href="#aboutMyself">Experience</a>
         <a style="color:black;" href="#blogDiv">Publications</a>
@@ -226,7 +228,7 @@ h2 {
         <div class="blog-box">
             <img src="img/blog1.jfif" alt="Blog 1" onclick="window.open('blog-3.html', '_blank')">
             <div class="blog-content">
-                <h5>Love: A chemical defect</h5>
+                <h5>How I felt about them!</h5>
             </div>
         </div>
 
